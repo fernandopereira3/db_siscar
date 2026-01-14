@@ -1,11 +1,8 @@
-FROM mysql:5.5
+FROM mysql:5.5.62
 
 WORKDIR /var/lib/mysql
-VOLUME /siscar/bkp
+VOLUME ./db:/var/lib/mysql
+VOLUME ./volSISCAR:/bkp_db
 
-RUN mysql -u root -p futuro07 < /siscar/bkp/siscar.sql
 
-
-CMD ["mysqld", "--port=3309"]
-
-EXPOSE 3309
+EXPOSE 3306

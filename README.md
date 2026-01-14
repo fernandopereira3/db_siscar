@@ -1,7 +1,5 @@
 # SISCAR – Banco de Dados Legado (MySQL 5.5, 2010)
 
-Este repositório contém o ambiente de banco de dados do sistema **SISCAR**, um sistema legado que utiliza **MySQL 5.5** (versão de 2010).
-
 O objetivo deste projeto é **migrar** o banco de dados do ambiente antigo para uma **infraestrutura nova**, baseada em **Docker**, mantendo compatibilidade com o sistema existente.
 
 De forma resumida:
