@@ -1,0 +1,19 @@
+services:
+  db_siscar:
+    image: mysql:5.5.62
+    command: --max_allowed_packet=1G --wait_timeout=28800 --interactive_timeout=28800 --net_read_timeout=3600 --net_write_timeout=3600
+    ports:
+      - "3309:3306"
+    restart: always
+    networks:
+      - siscarNet
+    environment:
+      - MYSQL_ROOT_PASSWORD=futuro07
+    volumes:
+      - ./db:/var/lib/mysql
+      - ./volSISCAR:/bkp_db
+
+networks:
+  siscarNet:
+    driver: bridge
+

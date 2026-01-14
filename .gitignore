@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+
+# Arquivos de banco de dados MySQL (dados binários)
+/db/
+
+# Dumps grandes de banco (backup)
+/volSISCAR/
+
+# Binários e instaladores do sistema SISCAR
+/beto/
+
+# Arquivos temporários e de backup
+*.log
+*.tmp
+~$*
+
